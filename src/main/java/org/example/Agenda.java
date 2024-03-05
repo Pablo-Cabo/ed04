@@ -7,7 +7,7 @@ import java.util.*;
  * @see Personas
  */
 
-public class Agenda {
+public class Agenda implements IAgenda {
 
     /**
      * Variable que contiene los contactos
@@ -29,6 +29,7 @@ public class Agenda {
      * @param phone Numero de la persona
      */
 
+    @Override
     public void addContact(String name, String phone) {
         boolean exists = false;
         for (Personas c : contacts) {
@@ -50,6 +51,7 @@ public class Agenda {
      * @param name Nombre de la persona
      */
 
+    @Override
     public void removeContact(String name) {
         Iterator<Personas> it = contacts.iterator();
 
@@ -69,6 +71,7 @@ public class Agenda {
      * @param newPhone Nuevo telefono de la persona
      */
 
+    @Override
     public void modifyPhoneNumber(String name, String oldPhone, String newPhone) {
         for (Personas c : contacts) {
             if (c.getName().equalsIgnoreCase(name)) {
@@ -88,6 +91,7 @@ public class Agenda {
      * @return Lista de contactos
      */
 
+    @Override
     public List<Personas> getContacts() {
         return this.contacts;
     }
