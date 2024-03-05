@@ -9,15 +9,7 @@ import java.util.List;
 
 public class Contacto {
 
-    /**
-     * Variable que almacena el nombre del contacto
-     */
-
     private String name;
-
-    /**
-     * Variable que almacena el o los telefonos del contacto
-     */
 
     private List<String> phones;
 
@@ -27,8 +19,8 @@ public class Contacto {
      * @param phone Telefono del contacto
      */
     public Contacto(String name, String phone) {
-        this.name = name;
-        this.phones = new ArrayList<>();
+        this.setName(name);
+        this.setPhones(new ArrayList<>());
         this.phones.add(phone);
     }
 
@@ -48,5 +40,23 @@ public class Contacto {
 
     public List<String> getPhones() {
         return this.phones;
+    }
+
+    /**
+     * Metodo para ponerle nombre al contacto
+     * @param name Nombre del contacto
+     */
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * Metodo para ponerle el  o los telefonos al contacto
+     * @param phones Numero o numeros de telefono
+     */
+
+    public void setPhones(List<String> phones) {
+        this.phones = phones;
     }
 }
