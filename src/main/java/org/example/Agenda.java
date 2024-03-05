@@ -3,7 +3,7 @@ package org.example;
 import java.util.*;
 
 /**
- * Clase Agenda, representa un lista de contactos
+ * Representa un lista de contactos
  * @see Contacto
  */
 

@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Clase Contacto, representa un contacto
+ * Representa un contacto
  */
 
-class Contacto {
+public class Contacto {
 
     /**
      * Variable que almacena el nombre del contacto
@@ -26,7 +26,6 @@ class Contacto {
      * @param name Nombre del contacto
      * @param phone Telefono del contacto
      */
-
     public Contacto(String name, String phone) {
         this.name = name;
         this.phones = new ArrayList<>();
