@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Representa un contacto
+ * Representa una persona
  */
 
-public class Contacto {
+public class Personas {
 
     private String name;
 
@@ -15,18 +15,18 @@ public class Contacto {
 
     /**
      * Constructor que inicializa los atributos de la clase
-     * @param name Nombre del contacto
-     * @param phone Telefono del contacto
+     * @param name Nombre de la persona
+     * @param phone Telefono de la persona
      */
-    public Contacto(String name, String phone) {
+    public Personas(String name, String phone) {
         this.setName(name);
         this.setPhones(new ArrayList<>());
         this.phones.add(phone);
     }
 
     /**
-     * Metodo para obtener el nombre del contacto
-     * @return Nombre del contacto
+     * Metodo para obtener el nombre de la persona
+     * @return Nombre de la persona
      */
 
     public String getName() {
@@ -34,8 +34,8 @@ public class Contacto {
     }
 
     /**
-     * Metodo para obtener el o los numeros del contacto
-     * @return Numero o numeros del contacto
+     * Metodo para obtener el o los numeros de la persona
+     * @return Numero o numeros de la persona
      */
 
     public List<String> getPhones() {
@@ -43,8 +43,8 @@ public class Contacto {
     }
 
     /**
-     * Metodo para ponerle nombre al contacto
-     * @param name Nombre del contacto
+     * Metodo para ponerle nombre a la persona
+     * @param name Nombre de la persona
      */
 
     public void setName(String name) {
@@ -52,8 +52,8 @@ public class Contacto {
     }
 
     /**
-     * Metodo para ponerle el  o los telefonos al contacto
-     * @param phones Numero o numeros de telefono
+     * Metodo para ponerle el o los telefonos a la persona
+     * @param phones Numero o numeros de telefono de la persona
      */
 
     public void setPhones(List<String> phones) {
